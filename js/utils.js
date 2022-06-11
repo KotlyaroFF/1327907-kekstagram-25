@@ -25,5 +25,13 @@ const getArrRandomNumber = (min, max) => {
   return arrRandomNumber;
 };
 
-export {createRandomNumder, inspectMaxLengthString, getArrRandomNumber};
+const isEscapeKey = (evt) => {
+  return evt.key === 'Escape';
+};
 
+const isEnterKey = (evt) => {
+  return evt.key === 'Enter';
+};
+
+
+export {createRandomNumder, inspectMaxLengthString, getArrRandomNumber, isEscapeKey, isEnterKey};
